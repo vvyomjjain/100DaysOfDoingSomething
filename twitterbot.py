@@ -24,7 +24,7 @@ for tweet in tweepy.Cursor(api.search,q='#100DaysOfDoingSomething').items(100):
         print('Favorited the tweet')
 
         # Reply to the tweet
-        api.update_status('Keep going @' + tweet.user.screen_name + ', it\'s worth it!', tweet.id)
+        # api.update_status('Keep going @' + tweet.user.screen_name + ', it\'s worth it!', tweet.id)
 
         sleep(5)
 
